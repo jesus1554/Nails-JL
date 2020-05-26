@@ -1,7 +1,137 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
-/* line 3, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Montserrat:wght@400;700&display=swap");
+/* line 4, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 body {
   font-family: 'Montserrat', sans-serif;
+}
+
+/* line 8, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+.site-header {
+  height: 100vh;
+  background: #ff5d8f;
+  background: linear-gradient(145deg, #ff5d8f 0%, #8447ff 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* line 22, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+.main-h1 {
+  color: #fff;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  font-size: 13rem;
+  margin-bottom: 20vh;
+}
+
+/* line 30, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+.site-navigation {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12vh;
+}
+
+@media (max-width: 928px) {
+  /* line 30, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+  .site-navigation {
+    justify-content: space-around;
+  }
+}
+
+/* line 47, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+.logo {
+  padding: 2rem 3.8rem;
+}
+
+/* line 48, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+.logo img {
+  height: 6rem;
+  margin-top: 2rem;
+}
+
+/* line 56, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+.links {
+  margin: 1rem 4rem 1.2rem 2rem;
+}
+
+/* line 59, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+.links a {
+  color: #000;
+  text-decoration: none;
+  margin: 1rem 2rem;
+  padding: 2.4rem 1rem;
+}
+
+@media (max-width: 928px) {
+  /* line 59, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+  .links a {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    padding: 3rem 5rem;
+    border-top: 1px solid #cecece;
+  }
+  /* line 66, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+  .links a:first-child {
+    border-top: none;
+  }
+  /* line 76, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+  .links a:hover {
+    background-color: #cecece;
+  }
+}
+
+@media (max-width: 928px) {
+  /* line 56, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+  .links {
+    margin: 0;
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 55%;
+    display: none;
+    transition: all 0.2s ease-in;
+  }
+}
+
+/* line 100, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+.nav-active {
+  display: block;
+}
+
+/* line 104, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+/* line 108, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+.burger div {
+  width: 2.5rem;
+  height: 2px;
+  background-color: #000;
+  margin: 5px;
+}
+
+@media (max-width: 928px) {
+  /* line 104, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+  .burger {
+    display: block;
+  }
+}
+
+/* line 121, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+.underline {
+  border-bottom: 3px solid #e31c72;
 }
 
 /*# sourceMappingURL=styles.css.map */

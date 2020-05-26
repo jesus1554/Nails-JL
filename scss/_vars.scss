@@ -4,4 +4,12 @@ $thin-pink: #fadde1;
 $light-pink: #ffc4d6;
 $medium-pink: #ff87ab;
 $pink: #ff5d8f;
+$hard-pink: #e31c72; // logo
+$violet: #a42cd6;    // logo
+$blue-violet: #8447ff;
+$pig-pink: #ff5d8f;
+
+@mixin dark-filter($path) {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url($path);
+}
 
