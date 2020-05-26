@@ -7,20 +7,16 @@ body {
 
 .site-header {
     height: 100vh;
-    // background-color: $thin-pink;
-    // @include dark-filter('../img/bg-1.jpg');
-    // background-image: url('../img/bg-2.jpg');
-    // background-size: cover;
-    // background-position: cover cover;
-    background: rgb(255,93,143);
-    background: linear-gradient(145deg, rgba(255,93,143,1) 0%, rgba(132,71,255,1) 100%);
+    background-image: url('../img/bg-2.jpg');
+    background-size: cover;
+    background-position: cover cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .main-h1 {
-    color: #fff;
+    // color: #fff;
     font-family: 'Amatic SC', cursive;
     text-align: center;
     font-size: 13rem;
