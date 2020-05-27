@@ -381,6 +381,7 @@ body {
 .btn-s {
   width: 10rem;
   height: 10rem;
+  transition: all ease-in 0.3s;
 }
 
 /* line 296, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
@@ -393,7 +394,12 @@ body {
   text-align: center;
 }
 
-/* line 306, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+/* line 304, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+.btn-s:hover {
+  transform: translateY(-0.3rem);
+}
+
+/* line 309, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .e-footer {
   display: flex;
   flex-direction: row;
@@ -406,7 +412,7 @@ body {
   text-shadow: 0 0 black;
 }
 
-/* line 317, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+/* line 320, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .e-footer a {
   color: #fff;
 }
