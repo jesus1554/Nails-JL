@@ -3,10 +3,19 @@
 
 body {
    font-family: 'Montserrat', sans-serif;
+   @media (max-width: 600px) {
+      text-align: center;
+   }
 }
 
 .amatic {
    font-family: 'Amatic SC', cursive;
+}
+
+@media (max-width: 700px) {
+   .main-title {
+      line-height: 1.3;
+   }
 }
 
 .h2-pnk {
@@ -32,7 +41,7 @@ body {
    height: 100vh;
    background-image: url('../img/bg-2.jpg');
    background-size: cover;
-   background-position: cover cover;
+   background-position: center center;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
@@ -44,6 +53,12 @@ body {
    text-align: center;
    font-size: 13rem;
    margin-bottom: 13vh;
+   @media (max-width: 700px) {
+      line-height: 1.3;
+      font-size: 8rem;
+      width: 95%;
+      margin: auto;
+   }
 }
 
 .site-navigation {
@@ -98,7 +113,7 @@ body {
          border-top: 1px solid #cecece;
 
          &:hover {
-            background-color: #cecece;
+            background-color: $thin-pink;
          }
       }
    }
@@ -148,7 +163,13 @@ body {
 .grid-2 {
    display: flex;
    justify-content: space-between;
-
+   @media (max-width: 1000px) {
+      flex-direction: column;
+      align-items: center;
+      p {
+         width: 100%;
+      }
+   }
    img {
       width: 45%;
    }
@@ -173,6 +194,9 @@ body {
    grid-template-columns: repeat(2, 1fr);
    column-gap: 2.5rem;
    justify-items: center;
+   @media (max-width: 720px) {
+      display: block;      
+   }
 }
 
 .service {
@@ -212,7 +236,7 @@ body {
 }
 
 .map-sect {
-   height: 70vh;
+   min-height: 70vh;
    @include dark-filter('../img/asset-2.jpg');
    background-size: cover;
    background-position: cover cover;
@@ -223,21 +247,34 @@ body {
    display: flex;
    justify-content: space-around;
    align-items: center;
-
+   @media (max-width: 1000px) {
+      @include center(true);
+   }
    h3 {
       font-size: 12rem;
       line-height: 1.2;
       color: #fff;
+      @media (max-width: 700px) {
+         text-align: center;
+         line-height: 1;
+         width: 90%;
+         margin: 2rem auto;
+      }
    }
 }
 
 .map {
    height: 50vh;
-   width: 100%
+   width: 100%;
+   @media (max-width: 1000px) {
+      height: 25vh;
+      width: 80%;
+      margin: 2rem auto;
+   }
 }
 
 #contacto {
-   height: 70vh;
+   min-height: 70vh;
    background: rgb(106, 0, 244);
    background: linear-gradient(270deg, rgba(106, 0, 244, 1) 0%, rgba(255, 93, 143, 1) 73%);
    @include center(true);
@@ -247,6 +284,9 @@ body {
    display: flex;
    justify-content: space-around;
    align-items: center;
+   @media (max-width: 460px) {
+      @include center(true);
+   }
 }
 
 .btn-s {
