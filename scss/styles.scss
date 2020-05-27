@@ -43,7 +43,7 @@ body {
    font-family: 'Amatic SC', cursive;
    text-align: center;
    font-size: 13rem;
-   margin-bottom: 20vh;
+   margin-bottom: 13vh;
 }
 
 .site-navigation {
@@ -161,7 +161,7 @@ body {
    background: rgb(255,196,214);
    background: linear-gradient(145deg, rgba(255,196,214,1) 0%, rgba(255,93,143,1) 100%);
    @include center(true);
-   padding-bottom: 3rem;
+   padding-bottom: 8rem;
 }
 .grid-services {
    display: grid;
@@ -175,9 +175,31 @@ body {
    background-color: $blue-violet;
    width: 100%;
    padding: 1rem 2.3rem;
-   margin: 2rem 1rem;
+   margin: 1rem;
    border-radius: 3rem;
    p {
       color: $thin-pink;
    }
 }
+
+.last-works-sect {
+   background-color: $thin-pink;
+   @include center(true);
+}
+
+
+.grid-lt {
+   width: 80%;
+   margin: 3rem auto;
+   display: flex;
+   flex-direction: column;
+}
+.lt-pic {
+   margin: 1.5rem auto;
+   display: flex;
+   justify-content: space-around;
+   img {
+      width: calc(50% - 3rem);
+   }
+}
+

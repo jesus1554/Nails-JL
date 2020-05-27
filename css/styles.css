@@ -48,7 +48,7 @@ body {
   font-family: 'Amatic SC', cursive;
   text-align: center;
   font-size: 13rem;
-  margin-bottom: 20vh;
+  margin-bottom: 13vh;
 }
 
 /* line 49, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
@@ -190,7 +190,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 3rem;
+  padding-bottom: 8rem;
 }
 
 /* line 166, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
@@ -207,13 +207,42 @@ body {
   background-color: #8447ff;
   width: 100%;
   padding: 1rem 2.3rem;
-  margin: 2rem 1rem;
+  margin: 1rem;
   border-radius: 3rem;
 }
 
 /* line 180, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .service p {
   color: #fadde1;
+}
+
+/* line 185, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+.last-works-sect {
+  background-color: #fadde1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 191, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+.grid-lt {
+  width: 80%;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 197, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+.lt-pic {
+  margin: 1.5rem auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* line 201, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+.lt-pic img {
+  width: calc(50% - 3rem);
 }
 
 /*# sourceMappingURL=styles.css.map */
