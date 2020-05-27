@@ -93,7 +93,7 @@ body {
   padding: 2.4rem 1rem;
 }
 
-/* line 83, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+/* line 84, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .links a:hover {
   color: #a42cd6;
   transition: all ease 0.3s;
@@ -108,11 +108,11 @@ body {
     padding: 3rem 5rem;
     border-top: 1px solid #cecece;
   }
-  /* line 88, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+  /* line 90, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
   .links a:first-child {
     border-top: none;
   }
-  /* line 98, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+  /* line 100, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
   .links a:hover {
     background-color: #cecece;
   }
@@ -124,8 +124,8 @@ body {
     margin: 0;
     position: absolute;
     right: 0px;
-    height: 92vh;
-    top: 8vh;
+    height: 90vh;
+    top: 12vh;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -137,18 +137,18 @@ body {
   }
 }
 
-/* line 122, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+/* line 124, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .nav-active {
   display: block;
 }
 
-/* line 126, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+/* line 128, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .burger {
   display: none;
   cursor: pointer;
 }
 
-/* line 130, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+/* line 132, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .burger div {
   width: 2.5rem;
   height: 2px;
@@ -157,30 +157,30 @@ body {
 }
 
 @media (max-width: 928px) {
-  /* line 126, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+  /* line 128, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
   .burger {
     display: block;
   }
 }
 
-/* line 146, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+/* line 148, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .grid-2 {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 149, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+/* line 152, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .grid-2 img {
   width: 45%;
 }
 
-/* line 153, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+/* line 157, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .splitted-text {
   width: 50%;
   margin: 1rem auto;
 }
 
-/* line 158, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+/* line 162, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .hero-services {
   margin-top: 6rem;
   min-height: 100vh;
@@ -193,7 +193,7 @@ body {
   padding-bottom: 8rem;
 }
 
-/* line 166, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+/* line 171, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .grid-services {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -201,7 +201,7 @@ body {
   justify-items: center;
 }
 
-/* line 173, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+/* line 178, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .service {
   text-align: center;
   background-color: #8447ff;
@@ -211,12 +211,12 @@ body {
   border-radius: 3rem;
 }
 
-/* line 180, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+/* line 186, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .service p {
   color: #fadde1;
 }
 
-/* line 185, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+/* line 191, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .last-works-sect {
   background-color: #fadde1;
   display: flex;
@@ -225,7 +225,7 @@ body {
   justify-content: center;
 }
 
-/* line 191, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+/* line 197, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .grid-lt {
   width: 80%;
   margin: 3rem auto;
@@ -233,19 +233,19 @@ body {
   flex-direction: column;
 }
 
-/* line 197, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+/* line 204, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .lt-pic {
   margin: 1.5rem auto;
   display: flex;
   justify-content: space-around;
 }
 
-/* line 201, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+/* line 209, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .lt-pic img {
   width: calc(50% - 3rem);
 }
 
-/* line 205, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+/* line 214, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .map-sect {
   height: 70vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/asset-2.jpg");
@@ -257,24 +257,76 @@ body {
   justify-content: center;
 }
 
-/* line 212, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+/* line 222, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .map-content {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-/* line 216, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+/* line 227, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .map-content h3 {
   font-size: 12rem;
   line-height: 1.2;
   color: #fff;
 }
 
-/* line 223, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+/* line 234, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .map {
   height: 50vh;
   width: 100%;
+}
+
+/* line 239, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+#contacto {
+  height: 70vh;
+  background: #6a00f4;
+  background: linear-gradient(270deg, #6a00f4 0%, #ff5d8f 73%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 246, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+.smb {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* line 252, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+.btn-s {
+  width: 10rem;
+  height: 10rem;
+}
+
+/* line 256, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+.btn-s a {
+  color: white;
+  background-color: #ff89b8;
+  padding: 2.2rem 3.2rem;
+  font-size: 2.8rem;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+/* line 266, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+.e-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e0935;
+  padding: 1.2rem 0;
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 black;
+}
+
+/* line 277, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+.e-footer a {
+  color: #fff;
 }
 
 /*# sourceMappingURL=styles.css.map */

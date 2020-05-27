@@ -14,19 +14,19 @@ body {
 }
 
 ::-webkit-scrollbar {
-	width: 12px;
-	background-color: #F5F5F5;
+   width: 12px;
+   background-color: #F5F5F5;
 }
 
 ::-webkit-scrollbar-thumb {
-	border-radius: 10px;
-	background-color: $violet;
+   border-radius: 10px;
+   background-color: $violet;
 }
 
 ::-webkit-scrollbar-track {
-	border-radius: 10px;
-	background-color: #F5F5F5;
-}  
+   border-radius: 10px;
+   background-color: #F5F5F5;
+}
 
 .site-header {
    height: 100vh;
@@ -80,10 +80,12 @@ body {
       text-decoration: none;
       margin: 1rem 2rem;
       padding: 2.4rem 1rem;
+
       &:hover {
          color: $violet;
          transition: all ease 0.3s;
       }
+
       @media (max-width: 928px) {
          &:first-child {
             border-top: none;
@@ -105,8 +107,8 @@ body {
       margin: 0;
       position: absolute;
       right: 0px;
-      height: 92vh;
-      top: 8vh;
+      height: 90vh;
+      top: 12vh;
       background-color: #fff;
       display: flex;
       flex-direction: column;
@@ -146,10 +148,12 @@ body {
 .grid-2 {
    display: flex;
    justify-content: space-between;
+
    img {
       width: 45%;
    }
 }
+
 .splitted-text {
    width: 50%;
    margin: 1rem auto;
@@ -158,11 +162,12 @@ body {
 .hero-services {
    margin-top: 6rem;
    min-height: 100vh;
-   background: rgb(255,196,214);
-   background: linear-gradient(145deg, rgba(255,196,214,1) 0%, rgba(255,93,143,1) 100%);
+   background: rgb(255, 196, 214);
+   background: linear-gradient(145deg, rgba(255, 196, 214, 1) 0%, rgba(255, 93, 143, 1) 100%);
    @include center(true);
    padding-bottom: 8rem;
 }
+
 .grid-services {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
@@ -177,6 +182,7 @@ body {
    padding: 1rem 2.3rem;
    margin: 1rem;
    border-radius: 3rem;
+
    p {
       color: $thin-pink;
    }
@@ -194,14 +200,17 @@ body {
    display: flex;
    flex-direction: column;
 }
+
 .lt-pic {
    margin: 1.5rem auto;
    display: flex;
    justify-content: space-around;
+
    img {
       width: calc(50% - 3rem);
    }
 }
+
 .map-sect {
    height: 70vh;
    @include dark-filter('../img/asset-2.jpg');
@@ -209,10 +218,12 @@ body {
    background-position: cover cover;
    @include center(true);
 }
+
 .map-content {
    display: flex;
    justify-content: space-around;
    align-items: center;
+
    h3 {
       font-size: 12rem;
       line-height: 1.2;
@@ -223,4 +234,47 @@ body {
 .map {
    height: 50vh;
    width: 100%
+}
+
+#contacto {
+   height: 70vh;
+   background: rgb(106, 0, 244);
+   background: linear-gradient(270deg, rgba(106, 0, 244, 1) 0%, rgba(255, 93, 143, 1) 73%);
+   @include center(true);
+}
+
+.smb {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.btn-s {
+   width: 10rem;
+   height: 10rem;
+
+   a {
+      color: white;
+      background-color: #ff89b8;
+      padding: 2.2rem 3.2rem;
+      font-size: 2.8rem;
+      border-radius: 2rem;
+      text-align: center;
+   }
+}
+
+.e-footer {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   background-color: #1e0935;
+   padding: 1.2rem 0;
+   color: white;
+   text-align: center;
+   text-shadow: 0 0 black;
+
+   a {
+      color: #fff;
+   }
 }
