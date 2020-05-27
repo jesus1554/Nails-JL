@@ -93,6 +93,12 @@ body {
   padding: 2.4rem 1rem;
 }
 
+/* line 83, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+.links a:hover {
+  color: #a42cd6;
+  transition: all ease 0.3s;
+}
+
 @media (max-width: 928px) {
   /* line 78, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
   .links a {
@@ -102,11 +108,11 @@ body {
     padding: 3rem 5rem;
     border-top: 1px solid #cecece;
   }
-  /* line 85, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+  /* line 88, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
   .links a:first-child {
     border-top: none;
   }
-  /* line 95, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+  /* line 98, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
   .links a:hover {
     background-color: #cecece;
   }
@@ -131,18 +137,18 @@ body {
   }
 }
 
-/* line 119, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+/* line 122, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .nav-active {
   display: block;
 }
 
-/* line 123, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+/* line 126, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .burger {
   display: none;
   cursor: pointer;
 }
 
-/* line 127, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+/* line 130, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .burger div {
   width: 2.5rem;
   height: 2px;
@@ -151,32 +157,63 @@ body {
 }
 
 @media (max-width: 928px) {
-  /* line 123, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+  /* line 126, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
   .burger {
     display: block;
   }
 }
 
-/* line 140, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
-.underline {
-  border-bottom: 3px solid #e31c72;
-}
-
-/* line 147, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+/* line 146, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .grid-2 {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 150, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+/* line 149, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .grid-2 img {
   width: 45%;
 }
 
-/* line 154, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+/* line 153, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .splitted-text {
   width: 50%;
   margin: 1rem auto;
+}
+
+/* line 158, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+.hero-services {
+  margin-top: 6rem;
+  min-height: 100vh;
+  background: #ffc4d6;
+  background: linear-gradient(145deg, #ffc4d6 0%, #ff5d8f 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
+/* line 166, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+.grid-services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2.5rem;
+  justify-items: center;
+}
+
+/* line 173, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+.service {
+  text-align: center;
+  background-color: #8447ff;
+  width: 100%;
+  padding: 1rem 2.3rem;
+  margin: 2rem 1rem;
+  border-radius: 3rem;
+}
+
+/* line 180, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+.service p {
+  color: #fadde1;
 }
 
 /*# sourceMappingURL=styles.css.map */

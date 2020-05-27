@@ -80,7 +80,10 @@ body {
       text-decoration: none;
       margin: 1rem 2rem;
       padding: 2.4rem 1rem;
-
+      &:hover {
+         color: $violet;
+         transition: all ease 0.3s;
+      }
       @media (max-width: 928px) {
          &:first-child {
             border-top: none;
@@ -137,10 +140,6 @@ body {
 }
 
 
-.underline {
-   border-bottom: 3px solid $hard-pink;
-}
-
 // End navigation
 
 // Start styles
@@ -156,3 +155,29 @@ body {
    margin: 1rem auto;
 }
 
+.hero-services {
+   margin-top: 6rem;
+   min-height: 100vh;
+   background: rgb(255,196,214);
+   background: linear-gradient(145deg, rgba(255,196,214,1) 0%, rgba(255,93,143,1) 100%);
+   @include center(true);
+   padding-bottom: 3rem;
+}
+.grid-services {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   column-gap: 2.5rem;
+   justify-items: center;
+}
+
+.service {
+   text-align: center;
+   background-color: $blue-violet;
+   width: 100%;
+   padding: 1rem 2.3rem;
+   margin: 2rem 1rem;
+   border-radius: 3rem;
+   p {
+      color: $thin-pink;
+   }
+}

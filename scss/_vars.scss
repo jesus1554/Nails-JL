@@ -7,7 +7,22 @@ $pink: #ff5d8f;
 $hard-pink: #e31c72; // logo
 $violet: #a42cd6;    // logo
 $blue-violet: #8447ff;
-$pig-pink: #ff5d8f;
+
+
+@mixin center($column) {
+    display: flex;
+
+    @if $column {
+        flex-direction: column;
+    }
+
+    @else {
+        flex-direction: row;
+    }
+
+    align-items: center;
+    justify-content: center;
+}
 
 @mixin dark-filter($path) {
     background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url($path);
