@@ -202,4 +202,25 @@ body {
       width: calc(50% - 3rem);
    }
 }
+.map-sect {
+   height: 70vh;
+   @include dark-filter('../img/asset-2.jpg');
+   background-size: cover;
+   background-position: cover cover;
+   @include center(true);
+}
+.map-content {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   h3 {
+      font-size: 12rem;
+      line-height: 1.2;
+      color: #fff;
+   }
+}
 
+.map {
+   height: 50vh;
+   width: 100%
+}

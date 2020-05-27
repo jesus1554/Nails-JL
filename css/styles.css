@@ -245,4 +245,36 @@ body {
   width: calc(50% - 3rem);
 }
 
+/* line 205, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+.map-sect {
+  height: 70vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/asset-2.jpg");
+  background-size: cover;
+  background-position: cover cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 212, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+.map-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* line 216, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+.map-content h3 {
+  font-size: 12rem;
+  line-height: 1.2;
+  color: #fff;
+}
+
+/* line 223, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
+.map {
+  height: 50vh;
+  width: 100%;
+}
+
 /*# sourceMappingURL=styles.css.map */
