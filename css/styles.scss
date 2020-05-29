@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Montserrat:wght@400;700&display=swap');
-@import 'vars.scss';
+@import '_vars.scss';
 
 body {
    font-family: 'Montserrat', sans-serif;
@@ -129,7 +129,7 @@ body {
       flex-direction: column;
       align-items: center;
       text-align: center;
-      width: 55%;
+      width: 100%;
       // transform: translateX(100%);
       display: none;
       transition: all 0.2s ease-in;
@@ -170,6 +170,7 @@ body {
          width: 100%;
       }
    }
+
    img {
       width: 45%;
    }

@@ -1,63 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Montserrat:wght@400;700&display=swap");
-/* line 4, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 body {
   font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 600px) {
-  /* line 4, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
   body {
     text-align: center;
   }
 }
 
-/* line 11, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .amatic {
   font-family: 'Amatic SC', cursive;
 }
 
 @media (max-width: 700px) {
-  /* line 16, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
   .main-title {
     line-height: 1.3;
   }
 }
 
-/* line 21, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .h2-pnk {
   color: #ff5d8f;
 }
 
-/* line 25, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 ::-webkit-scrollbar {
   width: 12px;
   background-color: #F5F5F5;
 }
 
-/* line 30, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #a42cd6;
 }
 
-/* line 35, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 ::-webkit-scrollbar-track {
   border-radius: 10px;
   background-color: #F5F5F5;
 }
 
-/* line 40, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .site-header {
   height: 100vh;
   background-image: url("../img/bg-2.jpg");
   background-size: cover;
   background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-/* line 50, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .main-h1 {
   font-family: 'Amatic SC', cursive;
   text-align: center;
@@ -66,7 +63,6 @@ body {
 }
 
 @media (max-width: 700px) {
-  /* line 50, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
   .main-h1 {
     line-height: 1.3;
     font-size: 8rem;
@@ -75,41 +71,43 @@ body {
   }
 }
 
-/* line 64, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .site-navigation {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 12vh;
 }
 
 @media (max-width: 928px) {
-  /* line 64, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
   .site-navigation {
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
-/* line 81, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .logo {
   padding: 2rem 3.8rem;
 }
 
-/* line 82, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .logo img {
   height: 6rem;
   margin-top: 2rem;
 }
 
-/* line 90, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .links {
   margin: 1rem 4rem 1.2rem 2rem;
 }
 
-/* line 93, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .links a {
   color: #000;
   text-decoration: none;
@@ -117,14 +115,13 @@ body {
   padding: 2.4rem 1rem;
 }
 
-/* line 99, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .links a:hover {
   color: #a42cd6;
+  -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
 }
 
 @media (max-width: 928px) {
-  /* line 93, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
   .links a {
     width: 100%;
     margin: 0 auto;
@@ -132,18 +129,15 @@ body {
     padding: 3rem 5rem;
     border-top: 1px solid #cecece;
   }
-  /* line 105, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
   .links a:first-child {
     border-top: none;
   }
-  /* line 115, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
   .links a:hover {
     background-color: #fadde1;
   }
 }
 
 @media (max-width: 928px) {
-  /* line 90, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
   .links {
     margin: 0;
     position: absolute;
@@ -151,28 +145,33 @@ body {
     height: 90vh;
     top: 12vh;
     background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
-    width: 55%;
+    width: 100%;
     display: none;
+    -webkit-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
   }
 }
 
-/* line 139, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .nav-active {
   display: block;
 }
 
-/* line 143, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .burger {
   display: none;
   cursor: pointer;
 }
 
-/* line 147, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .burger div {
   width: 2.5rem;
   height: 2px;
@@ -181,70 +180,81 @@ body {
 }
 
 @media (max-width: 928px) {
-  /* line 143, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
   .burger {
     display: block;
   }
 }
 
-/* line 163, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .grid-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 1000px) {
-  /* line 163, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
   .grid-2 {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  /* line 169, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
   .grid-2 p {
     width: 100%;
   }
 }
 
-/* line 173, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .grid-2 img {
   width: 45%;
 }
 
-/* line 178, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .splitted-text {
   width: 50%;
   margin: 1rem auto;
 }
 
-/* line 183, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .hero-services {
   margin-top: 6rem;
   min-height: 100vh;
   background: #ffc4d6;
   background: linear-gradient(145deg, #ffc4d6 0%, #ff5d8f 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-bottom: 8rem;
 }
 
-/* line 192, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .grid-services {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 2.5rem;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 2.5rem;
+          column-gap: 2.5rem;
   justify-items: center;
 }
 
 @media (max-width: 720px) {
-  /* line 192, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
   .grid-services {
     display: block;
   }
 }
 
-/* line 202, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .service {
   text-align: center;
   background-color: #8447ff;
@@ -254,70 +264,102 @@ body {
   border-radius: 3rem;
 }
 
-/* line 210, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .service p {
   color: #fadde1;
 }
 
-/* line 215, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .last-works-sect {
   background-color: #fadde1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-/* line 221, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .grid-lt {
   width: 80%;
   margin: 3rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-/* line 228, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .lt-pic {
   margin: 1.5rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-/* line 233, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .lt-pic img {
   width: calc(50% - 3rem);
 }
 
-/* line 238, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .map-sect {
   min-height: 70vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../img/asset-2.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/asset-2.jpg");
   background-size: cover;
   background-position: cover cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-/* line 246, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .map-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 1000px) {
-  /* line 246, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
   .map-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
-/* line 253, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .map-content h3 {
   font-size: 12rem;
   line-height: 1.2;
@@ -325,7 +367,6 @@ body {
 }
 
 @media (max-width: 700px) {
-  /* line 253, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
   .map-content h3 {
     text-align: center;
     line-height: 1;
@@ -334,14 +375,12 @@ body {
   }
 }
 
-/* line 266, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .map {
   height: 50vh;
   width: 100%;
 }
 
 @media (max-width: 1000px) {
-  /* line 266, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
   .map {
     height: 25vh;
     width: 80%;
@@ -349,42 +388,62 @@ body {
   }
 }
 
-/* line 276, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 #contacto {
   min-height: 70vh;
   background: #6a00f4;
+  background: -webkit-gradient(linear, right top, left top, from(#6a00f4), color-stop(73%, #ff5d8f));
   background: linear-gradient(270deg, #6a00f4 0%, #ff5d8f 73%);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-/* line 283, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .smb {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 460px) {
-  /* line 283, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
   .smb {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
-/* line 292, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .btn-s {
   width: 10rem;
   height: 10rem;
+  -webkit-transition: all ease-in 0.3s;
   transition: all ease-in 0.3s;
 }
 
-/* line 296, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .btn-s a {
   color: white;
   background-color: #ff89b8;
@@ -394,17 +453,25 @@ body {
   text-align: center;
 }
 
-/* line 304, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .btn-s:hover {
-  transform: translateY(-0.3rem);
+  -webkit-transform: translateY(-0.3rem);
+          transform: translateY(-0.3rem);
 }
 
-/* line 309, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .e-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #1e0935;
   padding: 1.2rem 0;
   color: white;
@@ -412,9 +479,7 @@ body {
   text-shadow: 0 0 black;
 }
 
-/* line 320, C:/Users/jesus/prog/nails-jl/scss/styles.scss */
 .e-footer a {
   color: #fff;
 }
-
 /*# sourceMappingURL=styles.css.map */
